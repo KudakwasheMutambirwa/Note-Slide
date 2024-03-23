@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseDragged="#onAnchorPaneDragged" onMousePressed="#onAnchorPanePressed" prefHeight="240.0" prefWidth="446.0" style="-fx-border-color: #ffff; -fx-border-insets: 5; -fx-border-width: 1; -fx-border-radius: 2;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.byteclass.noteslide.controller.MainController">
+   <children>
+      <Label fx:id="labelTopic" alignment="CENTER" layoutX="94.0" layoutY="22.0" prefHeight="20.0" prefWidth="231.0" style="-fx-background-color: #0A84FFFF;" text="COMPILER" textAlignment="CENTER" AnchorPane.leftAnchor="94.0" AnchorPane.rightAnchor="94.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNote" alignment="TOP_CENTER" layoutX="26.0" layoutY="60.0" prefHeight="141.0" prefWidth="409.0" text="A compiler is a software program that transforms high-level source code that is written by a developer in a high-level programming language into a low level object code(binary code) in machine language, which can be understood by the processor." textAlignment="CENTER" textFill="WHITE" wrapText="true" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="17.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="settingsImageView" fitHeight="25.0" fitWidth="25.0" layoutX="20.0" layoutY="19.0" onMouseClicked="#openSettingsForm" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-settings-40.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="closeWindImageView" fitHeight="25.0" fitWidth="25.0" layoutX="399.0" layoutY="20.0" onMouseClicked="#closeApplication" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons8-close-window-40.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelAddNote" layoutX="207.0" layoutY="206.0" text="Label">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
